@@ -1,0 +1,19 @@
+.title{
+    background-color: #FCA311;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    margin-bottom: 30px;
+}
+.title img{
+    height: 35px;
+    padding: 2px;
+}
+.eg-text, .title, .author-title{
+    color: #14213D ;
+    font-family: 'Abril Fatface', cursive;
+}
+.eg-text{
+    font-size: 30px;
+}
