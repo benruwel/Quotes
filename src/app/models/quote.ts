@@ -3,6 +3,7 @@ export class Quote {
     showDescription : boolean;
     upVote : number;
     downVote : number;
+
   
     constructor (
       public id: number,

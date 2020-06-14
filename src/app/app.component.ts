@@ -1,3 +1,4 @@
+import { Quote } from './models/quote';
 import { Component } from '@angular/core';
 
 @Component({
