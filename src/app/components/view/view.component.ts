@@ -1,3 +1,4 @@
+import { Quote } from './../../models/quote';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view.component.css']
 })
 export class ViewComponent implements OnInit {
+
+  quotes : Quote[] = [
+    new Quote(1, 'Keep calm', 'Ben Ruwel', 'ben', 6)
+  ]
 
   constructor() { }
 

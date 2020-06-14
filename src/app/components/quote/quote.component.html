@@ -3,15 +3,14 @@
 <div class="card-header">
     <div class="row">
         <div class="col-8">
-            <p class="card-text">User</p>
+            <p class="card-text"> {{ quote.user }}</p>
         </div>
         <div class="col-4">
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <p class="card-text"><small class="text-muted">Last updated {{ quote.timePassed }} mins ago</small></p>
         </div>
     </div>
 </div>
 
 <div class="card-body">
-  <p class="card-text">Quote goes here</p>
-  <button class="btn btn-sm btn-outline-primary">Description</button>
+  <p class="card-text"> {{ quote.quote }} </p>
 </div>

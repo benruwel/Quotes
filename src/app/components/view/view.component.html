@@ -14,25 +14,18 @@
             <div>
                 <p>This weeks quotes</p>
             </div>
-            <div class="card">
+            <div *ngFor="let quote of quotes" class="card">
 
-                <app-quote></app-quote>
+                <app-quote [quote]='quote'></app-quote>
+                <button class="btn btn-sm btn-outline-primary">Description</button>
 
                 <hr>
+
                 <div class="card-body description">
-                    <div class="row">
-                        <div class="up-vote col-2">
-                            <p>0</p>
-                            <img src="../../../assets/upVote.svg" alt="upvote">
-                        </div>
-                        <div class="down-vote col-2">
-                            <p>0</p>
-                            <img src="../../../assets/downVote.svg" alt="upvote">
-                        </div>
-                        <div class="author col-8">
-                            <p>Aurthor's name</p>
-                        </div>
-                    </div>
+
+                   <app-quote-description [quote]='quote'></app-quote-description>
+
+
                 </div>
 
               </div>
