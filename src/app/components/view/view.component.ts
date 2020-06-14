@@ -17,4 +17,8 @@ export class ViewComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toggleDetails(index) {
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
 }

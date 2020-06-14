@@ -14,21 +14,24 @@
             <div>
                 <p>This weeks quotes</p>
             </div>
-            <div *ngFor="let quote of quotes" class="card">
+            <div *ngFor="let quote of quotes; let i = index" class="card">
 
-                <app-quote [quote]='quote'></app-quote>
-                <button class="btn btn-sm btn-outline-primary">Description</button>
-
+                <div>
+                    <app-quote [quote]='quote'></app-quote>
+                </div>
+                
                 <hr>
-
+                
                 <div class="card-body description">
 
-                   <app-quote-description [quote]='quote'></app-quote-description>
+                    <button (click)="toggleDetails(i)" class="btn btn-outline-primary btn-sm " style="margin-bottom: 20px;" >Description</button>
+
+                    <app-quote-description *ngIf="quote.showDescription" [quote]='quote'></app-quote-description>
 
 
                 </div>
-
-              </div>
+                
+            </div>
         </div>
 
         <div class="col-md-6">

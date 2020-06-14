@@ -10,6 +10,12 @@
     height: 35px;
     padding: 2px;
 }
+
+
+hr{
+    margin: 0;
+}
+
 .eg-text{
     font-size: 30px;
 }
