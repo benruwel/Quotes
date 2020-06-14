@@ -9,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class ViewComponent implements OnInit {
 
   quotes : Quote[] = [
-    new Quote(1, 'Keep calm', 'Ben Ruwel', 'ben', 6),
-    new Quote(1, 'Keep calm', 'Ben Ruwel', 'ben', 6),
-    new Quote(1, 'Keep calm', 'Ben Ruwel', 'ben', 6),
+    new Quote(1, 'Keep calm', 'Ben Ruwel', 'ben'),
+    new Quote(1, 'Keep calm', 'Ben Ruwel', 'ben'),
+    new Quote(1, 'Keep calm', 'Ben Ruwel', 'ben'),
   ]
 
   constructor() { }
@@ -25,6 +25,12 @@ export class ViewComponent implements OnInit {
 
   deleteGoal(index) {
     this.quotes.splice(index, 1);
+  }
+
+  addNewQuote(quote) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    this.quotes.push(quote);
   }
 
 }

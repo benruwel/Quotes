@@ -10,7 +10,6 @@ export class Quote {
       public quote: string,
       public author: string,
       public user : string,
-      public timePassed : number
       ){
   
         this.showDescription = false;
