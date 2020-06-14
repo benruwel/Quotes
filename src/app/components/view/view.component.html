@@ -6,8 +6,9 @@
     <img src="../../../assets/quote-right-solid.svg" alt="quote">
 </div>
 
-<div class="container">
 
+<div class="container">
+    
     <div class="row">
         
         <div class="col-md-6">
@@ -15,8 +16,9 @@
                 <p>This weeks quotes</p>
             </div>
             
+            
             <div *ngFor="let quote of quotes; let i = index" class="card">
-
+                
                 <div>
                     <app-quote [quote]='quote'></app-quote>
                 </div>
@@ -24,33 +26,42 @@
                 <hr>
                 
                 <div class="card-body description">
-
+                    
                     <div class="btn-group" role="group">
-
+                        
                         <button type="button" (click)="toggleDetails(i)" class="btn btn-outline-primary btn-sm " style="margin-bottom: 20px;" >Description</button>
                         <button type="button" (click)="deleteGoal(i)" class="btn btn-outline-danger btn-sm " style="margin-bottom: 20px;" >Delete</button>
-                       
+                        
                     </div>
-
+                    
                     
                     <app-quote-description *ngIf="quote.showDescription" [quote]='quote'></app-quote-description>
-
-
+                    
+                    
                 </div>
                 
             </div>
         </div>
-
+        
         <div class="col-md-6">
             <app-quote-form></app-quote-form>
 
-              <div class="quote-eg">
-                  <p class="eg-text">“I don’t believe in astrology; I’m a Sagittarius and we’re skeptical.”</p>
-                  <p class="author-title">~ Arthur C. Clarke</p>
-              </div>
+            
+            <div class="card quote-eg">
+                <div class="card-body">
 
+                    <p class="card-text eg-text">“In order to understand recursion, one must first understand recursion.”</p>
+                    <p class="author-title">~ Anonymous</p>
+            
+                </div>
+                
+            </div>
+
+               
+
+            
         </div>
-
+        
     </div>
 
 </div>

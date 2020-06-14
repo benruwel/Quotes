@@ -9,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class ViewComponent implements OnInit {
 
   quotes : Quote[] = [
-    new Quote(1, 'Keep calm', 'Ben Ruwel', 'ben', 6)
+    new Quote(1, 'Keep calm', 'Ben Ruwel', 'ben', 6),
+    new Quote(1, 'Keep calm', 'Ben Ruwel', 'ben', 6),
+    new Quote(1, 'Keep calm', 'Ben Ruwel', 'ben', 6),
   ]
 
   constructor() { }
