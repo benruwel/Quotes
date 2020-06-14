@@ -14,6 +14,7 @@
             <div>
                 <p>This weeks quotes</p>
             </div>
+            
             <div *ngFor="let quote of quotes; let i = index" class="card">
 
                 <div>
@@ -24,7 +25,13 @@
                 
                 <div class="card-body description">
 
-                    <button (click)="toggleDetails(i)" class="btn btn-outline-primary btn-sm " style="margin-bottom: 20px;" >Description</button>
+                    <div class="btn-group" role="group">
+
+                        <button type="button" (click)="toggleDetails(i)" class="btn btn-outline-primary btn-sm " style="margin-bottom: 20px;" >Description</button>
+                        <button type="button" (click)="deleteGoal(i)" class="btn btn-outline-danger btn-sm " style="margin-bottom: 20px;" >Delete</button>
+                       
+                    </div>
+
                     
                     <app-quote-description *ngIf="quote.showDescription" [quote]='quote'></app-quote-description>
 

@@ -21,4 +21,8 @@ export class ViewComponent implements OnInit {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
 
+  deleteGoal(index) {
+    this.quotes.splice(index, 1);
+  }
+
 }
