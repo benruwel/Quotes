@@ -1,6 +1,6 @@
 # Quotes
 
-    This is web application made with angular that allows users to post their favorite quotes and share them with world.
+This is web application made with angular that allows users to post their favorite quotes and share them with world.
 
 ## Setup Instructions
 
@@ -26,8 +26,8 @@
 
 ## Contributing
 
-    Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
-    This is an open source software in accordance with the [MIT License]
+This is an open source software in accordance with the [MIT License]    
