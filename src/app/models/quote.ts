@@ -3,6 +3,7 @@ export class Quote {
     showDescription : boolean;
     upVote : number;
     downVote : number;
+    timePassed : Date;
 
   
     constructor (
@@ -15,7 +16,7 @@ export class Quote {
         this.showDescription = false;
         this.upVote = 0;
         this.downVote = 0;
-  
+        this.timePassed = new Date();
     }
   
 }

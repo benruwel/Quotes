@@ -6,7 +6,7 @@
             <p class="card-text"> {{ quote.user }}</p>
         </div>
         <div class="col-4">
-            <p class="card-text"><small class="text-muted">Last updated 8 mins ago</small></p>
+            <p class="card-text"><small class="text-muted">Last updated {{ quote.timePassed|timePassedCount }} mins ago</small></p>
         </div>
     </div>
 </div>
