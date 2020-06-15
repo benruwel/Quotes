@@ -2,8 +2,13 @@
 
 
 <div class="title">
+    <img src="../../../assets/quote-left.svg" alt="quote">
     <h1>Quotes</h1>
-    <img src="../../../assets/quote-right-solid.svg" alt="quote">
+    <img src="../../../assets/quote-right.svg" alt="quote">
+</div>
+
+<div class="motivate">
+    <p>Motivate others with what motivates you!</p>
 </div>
 
 
@@ -12,13 +17,9 @@
     <div class="row">
         
         <div class="col-md-6">
-            <div>
-                <p>This weeks quotes</p>
-            </div>
             
+            <div *ngFor="let quote of quotes; let i = index" class="card quote-box">
             
-            <div *ngFor="let quote of quotes; let i = index" class="card">
-                
                 <div>
                     <app-quote [quote]='quote'></app-quote>
                 </div>

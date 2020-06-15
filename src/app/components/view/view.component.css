@@ -1,37 +1,39 @@
+
 .title{
-    background-color: #FCA311;
+    background-color:#14213D;
+    height: 10vh;
+    margin-bottom: 30px;
+}
+.motivate, .title {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
-    margin-bottom: 30px;
+}
+.motivate{
+    font-size: 20px;
 }
 .title img{
     height: 35px;
     padding: 2px;
 }
 
-.card{
-    margin-bottom: 20px;
-}
 hr{
     margin: 0;
 }
 
 .card{
-    margin-top: 40px;
     box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.158);
+    margin-bottom: 20px;
 }
-
+.quote-eg{
+    margin-top: 40px;
+}
 .eg-text{
     font-size: 30px;
 }
-.eg-text, .title, .author-title{
+.eg-text, .title, .author-title, .motivate{
     font-family: 'Abril Fatface', cursive;
 }
-.title, .eg-text{
-    color: #14213D;
-}
-.eg-text{
+.eg-text, .title{
     color: #FCA311 ;
 }

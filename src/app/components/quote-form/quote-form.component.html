@@ -1,9 +1,11 @@
 
 
-<form (ngSubmit)='submitQuote()' #quoteForm='ngForm' method="clear">
+<form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
     <div class="form-group">
-        <label for="qupte">Enter your quote</label>
-        <textarea class="form-control" name="quote" id="quote" rows="4"></textarea>
+        <label class="sr-only" for="qupte">Enter your quote</label>
+        <textarea placeholder="What inspires you today?" class="form-control" name="quote" id="quote" rows="4" name="quote" [(ngModel)]="newQuote.quote" >
+            
+        </textarea>
     </div>
     <div class="form-row">
 
@@ -18,7 +20,8 @@
                 </div>
 
                 <input type="text" class="form-control" id="inlineFormInputGroup" 
-                id="username" placeholder="Username" name="username" [(ngModel)]='newQuote.quote' #username='ngModel' 
+                id="username" placeholder="Username" name="user" [(ngModel)]='newQuote.user' 
+                #username='ngModel' 
                 required>
 
                 
@@ -41,12 +44,15 @@
                 <p style="margin: 0;">Author's name required</p>
             </div>
 
+            
         </div>
         
-      <div class="col-auto">
+        <div class="col-auto">
 
+            <p style="margin:0;">Today's date</p>
+            <input type="date" class="form-control mb-2" name="date" id="date">
           
-    </div>
+        </div>
 </div>
 <button type="submit" class="btn btn-outline-primary btn-sm">Submit</button>
   </form>
