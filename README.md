@@ -1,28 +1,33 @@
 # Quotes
 
-This is web application made with angular that allows users to post their favorite quotes and share them with world.
+    This is web application made with angular that allows users to post their favorite quotes and share them with world.
 
-# Setup Instructions
+## Setup Instructions
 
-1
+1. Clone this repository:
+    ```bash
+        `git clone https://github.com/benruwel/Quotes.git`
+    ```
+2. Open project in your preferred code editor
 
-## Development server
+3. Open the teriminal and run this code to install the required npm packges:
+    ```bash
+        npm install
+    ```
+4. To run the project locally(development server):
+    ```bash
+        ng serve
+    ```
+5. To build the project run:
+    ```bash
+        ng build
+    ```    
+    The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Contributing
 
-## Code scaffolding
+    Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## License
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
+    This is an open source software in accordance with the [MIT License]
