@@ -3,7 +3,10 @@
 <div class="card-header">
     <div class="row">
         <div class="col-8">
-            <p class="card-text"> {{ quote.user }}</p>
+            <div class="user">
+                <img src="../../../assets/profile.svg" alt="Profiel-image">
+                <p class="card-text"> {{ quote.user }}</p>
+            </div>
         </div>
         <div class="col-4">
             <p class="card-text"><small class="text-muted">Posted {{ quote.timePassed|timePassedCount }} mins ago</small></p>

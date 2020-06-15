@@ -13,9 +13,9 @@ export class TimePassedCountPipe implements PipeTransform {
     let today : Date = new Date();
     let todayWithTime : any = new Date(today.getTime())
 
-    var timeInSeconds = Math.round(( todayWithTime - postedTimeMilliseconds ) / 1000);
+    var timeInMinutes = Math.round(( todayWithTime - postedTimeMilliseconds ));
  
-    return timeInSeconds;
+    return timeInMinutes;
     
   }
 
