@@ -1,4 +1,4 @@
-.up-vote img, .down-vote img{
+.up-vote svg, .down-vote svg{
     height: 20px;
     cursor: pointer;
     padding: 0 5px;
